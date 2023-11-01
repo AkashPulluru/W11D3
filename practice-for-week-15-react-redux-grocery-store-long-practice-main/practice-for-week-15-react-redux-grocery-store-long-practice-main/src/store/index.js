@@ -1,16 +1,5 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 
-const rootReducer = combineReducers({
-  some: someReducer,
-  another: anotherReducer
-});
-
-const storeEnhancer = getEnhancer();
-
-const store = createStore(
-    rootReducer, 
-    storeEnhancer
-);
 
 let enhancer;
 
