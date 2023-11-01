@@ -21,3 +21,9 @@ function getEnhancer() {
     }
     return compose();
 }
+
+const configureStore = (preloadedState) => {
+    return createStore(rootReducer, preloadedState, enhancer);
+  };
+  
+  export default configureStore;
