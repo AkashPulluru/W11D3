@@ -6,10 +6,7 @@ import configureStore from './store';
 import './index.css';
 import App from './App';
 
-if (process.env.NODE_ENV !== "production") {
-  window.store = store;
-}
-const store= configureStore()
+const store = configureStore();
 
 function Root() {
   return (
